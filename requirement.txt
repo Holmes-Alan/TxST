@@ -1,0 +1,14 @@
+tqdm
+scipy
+matplotlib
+numpy
+opencv-python
+pyyaml
+scikit-learn
+regex
+ftfy
+pytorch-lightning
+pandas
+pillow
+einops
+future
