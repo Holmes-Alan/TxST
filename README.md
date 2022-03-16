@@ -53,5 +53,5 @@ $ python demo_edit_texture_style.py --content #path to your content image --styl
 
 # Visualization
 Here we show some cases on Wikiart style transfer using just texts as style description.
-![figure1](/figure/figure1.png)
-![figure2](/figure/figure2.png)
+![figure1](/figure/Picture1.png)
+![figure2](/figure/Picture2.png)
