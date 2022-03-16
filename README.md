@@ -31,6 +31,9 @@ $ miniconda3/envs/conda_env_name(#your conda-env name#)/lib/python(#your version
 then replace it with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
 
 # Testing
+## download the pretrianed model from [here](https://drive.google.com/file/d/1lQm5MGpPV1154MbtvGQDZlCMx2D8beHr/view?usp=sharing)
+put the files under "models"
+
 ## artist style transfer using reference images
 put your content images under "data/content" and put your style images under "data/style"
 
