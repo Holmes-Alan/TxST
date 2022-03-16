@@ -28,7 +28,7 @@ find the "model.py" at the prebuilt CLIP lib path, if you are using Conda, you c
 ```sh
 $ miniconda3/envs/conda_env_name(#your conda-env name#)/lib/python(#your version#)/site-packages/clip
 ```
-then replace it with the next [file]
+then replace it with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
 
 # Testing
 ## artist style transfer using reference images
