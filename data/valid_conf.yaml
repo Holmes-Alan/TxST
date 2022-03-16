@@ -1,0 +1,9 @@
+content_path: "datasets/contents"
+style_path: "datasets/styles_subset"
+load_size: 512 #scale images to this size
+crop_size: 256
+load_ratio: 1.0 # ratio of width to height in loading time
+crop_ratio: 1.0 # ratio of width to height in cropping time
+max_dataset_size: 9999999 # 'Maximum number of samples allowed per dataset. If the dataset directory contains more than max_dataset_size, only a subset is loaded.')
+preprocess: 'resize_and_crop' #help='scaling and cropping of images at load time [resize_and_crop | crop | scale_width | scale_width_and_crop | none]')
+no_flip: False # help='if specified, do not flip the images for data augmentation')
