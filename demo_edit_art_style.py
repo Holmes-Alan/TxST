@@ -44,7 +44,7 @@ def custom_text(text):
 if __name__ == '__main__':
     m_model = StyleTransfer.load_from_checkpoint(
         "models/wikiart.ckpt").cuda()
-    # you can also trin wikiart_subset.ckpt for testing
+    # you can also try wikiart_subset.ckpt for testing
     
     I_c = read_content_img(opt.content)
 
