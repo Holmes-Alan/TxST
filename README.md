@@ -45,6 +45,8 @@ run
 $ python demo_edit_art_style.py --content #path to your content image --style #artistic text
 ```
 
+You can find artists' name from wikiauthors.txt file.
+
 ## texture style transfer using texts
 run
 ```sh
@@ -53,5 +55,8 @@ $ python demo_edit_texture_style.py --content #path to your content image --styl
 
 # Visualization
 Here we show some cases on Wikiart style transfer using just texts as style description.
+We first compare with state-of-the-art CLIP based approach [CLIPstyler](https://arxiv.org/abs/2112.00374). We have better artistic stylization and consistent style changes.
 ![figure1](/figure/Picture1.png)
+
+We also use more artists's names for style transfer.
 ![figure2](/figure/Picture2.png)
