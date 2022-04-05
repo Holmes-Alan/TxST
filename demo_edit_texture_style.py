@@ -3,7 +3,7 @@ import os
 import torch
 import argparse
 from lib.pl_utils import UnNormalize
-from train_img import StyleTransfer
+from model_define import StyleTransfer
 import torchvision.transforms as transforms
 from PIL import Image
 import clip
