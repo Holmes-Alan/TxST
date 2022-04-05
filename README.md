@@ -16,7 +16,7 @@ Please check our [paper](https://arxiv.org/pdf/2202.13562.pdf)
 # Usage
 ## First, install additional dependencies by running
 ```sh
-$ pip install -r requirements.txt
+$ pip install -r requirement.txt
 ```
 ## Second, install [CLIP](https://github.com/openai/CLIP)
 ```sh
