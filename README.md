@@ -80,7 +80,7 @@ run
 $ python demo_edit_texture_style.py --content %path-to-your-content-image% --style %texture-text%
 
 # Example
-python demo_edit_art_style.py --content data/content/14.jpg --style grid
+python demo_edit_texture_style.py --content data/content/14.jpg --style grid
 ```
 
 # Visualization
