@@ -1,5 +1,7 @@
 # TxST (Arbitrary text driven artistic style transfer)
 
+[![Open TxST in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1RO_gZBqSHoNWt-lo8oaw5NBI2E3dXASi?usp=sharing)<br>
+
 Text-driven image style transfer (TxST) that leverages advanced image-text encoders to control arbitrary style transfer.
 
 By Zhi-Song Liu, Li-Wen Wang, Wan-Chi Siu and Vicky Kalogeiton
