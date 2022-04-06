@@ -31,21 +31,45 @@ $ miniconda3/envs/conda_env_name(#your conda-env name#)/lib/python(#your version
 then replace it with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
 
 # Testing
-## download the pretrianed model from [here](https://drive.google.com/file/d/1lQm5MGpPV1154MbtvGQDZlCMx2D8beHr/view?usp=sharing)
-put the files under "models"
+## 1. download the pretrianed model from [here](https://drive.google.com/file/d/1lQm5MGpPV1154MbtvGQDZlCMx2D8beHr/view?usp=sharing)
+put the files under "models", like:
+```text
+├── models
+│   ├── readme.txt
+│   ├── texture.ckpt
+│   ├── wikiart_all.ckpt
+│   └── wikiart_subset.ckpt
+```
+
+## 2. download the pretrained VGG model from [here](https://drive.google.com/file/d/19ZbeHK2UxzzTNeDMcWfE1TbyFkBUurns/view?usp=sharing)
+put the files under "pretrained_models", like:
+```text
+├── pretrained_models
+│   ├── readme.txt
+│   └── vgg_normalised.pth
+
+```
 
 ## artist style transfer using reference images
 put your content images under "data/content" and put your style images under "data/style"
 
-then run,
+then run the following script. 
+
 ```sh
 $ python eval_ST_img.py
 ```
 
+the results are saved at "output" folder
+
+
+
 ## artist style transfer using texts
 run
 ```sh
-$ python demo_edit_art_style.py --content #path to your content image --style #artistic text
+$ python demo_edit_art_style.py --content %path-to-your-content-image% --style %artistic-text%
+
+# Example
+python demo_edit_art_style.py --content data/content/14.jpg --style vangogh
 ```
 
 You can find artists' name from wikiauthors.txt file.
@@ -53,7 +77,10 @@ You can find artists' name from wikiauthors.txt file.
 ## texture style transfer using texts
 run
 ```sh
-$ python demo_edit_texture_style.py --content #path to your content image --style #texture text
+$ python demo_edit_texture_style.py --content %path-to-your-content-image% --style %texture-text%
+
+# Example
+python demo_edit_art_style.py --content data/content/14.jpg --style grid
 ```
 
 # Visualization

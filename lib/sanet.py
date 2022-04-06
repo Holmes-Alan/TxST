@@ -84,32 +84,6 @@ class CrossAttN_v8(nn.Module):
         return result
         
 
-    def __init__(self, in_planes):
-        super(SelfAttN, self).__init__()
-        scale = 0.01
-        self.f = nn.Conv2d(in_planes, 64, 1, 1, 0)
-        self.g = nn.Conv2d(in_planes, 64, 1, 1, 0)
-        self.h = nn.Conv2d(in_planes, 64, 1, 1, 0)
-        self.output = nn.Conv2d(64, in_planes, 1, 1, 0)
-        return
-
-    def forward(self, F_c):
-        b, c = F_c.shape[0], F_c.shape[1]
-        F = self.f(F_c)
-        F = F.view(b, F.shape[1], -1)
-        G = self.g(F_c)
-        G = G.view(b, G.shape[1], -1)
-        H = self.h(F_c)
-        H = H.view(b, H.shape[1], -1)
-        S = torch.bmm(F.permute(0, 2, 1), G) # b, d_s, d_c
-        S = Func.softmax(S, dim=-1)
-        result = torch.bmm(H, S.permute(0, 2, 1)) # b, d_c, h*w
-        result = result.view(b, result.shape[1], F_c.shape[2], F_c.shape[3])
-        result = self.output(result)
-        result = result + F_c
-
-        return result
-
 
 class CA_SA_v4(nn.Module):
     def __init__(self, in_planes, out_planes, clip_dim=512, max_sample=256 * 256):

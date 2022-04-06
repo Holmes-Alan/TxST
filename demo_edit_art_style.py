@@ -13,7 +13,7 @@ from torchvision.transforms.functional import adjust_contrast
 
 # Testing settings
 parser = argparse.ArgumentParser(description='PyTorch TxST Example')
-parser.add_argument('--content', type=str, default='data/content/church.jpeg', help="content images")
+parser.add_argument('--content', type=str, default='data/content/14.jpg', help="content images")
 parser.add_argument('--style', type=str, default='van gogh', help='text styles')
 
 opt = parser.parse_args()
@@ -43,7 +43,7 @@ def custom_text(text):
 
 if __name__ == '__main__':
     m_model = StyleTransfer.load_from_checkpoint(
-        "models/wikiart.ckpt").cuda()
+        "models/wikiart_all.ckpt", strict=False).cuda()
     # you can also try wikiart_subset.ckpt for testing
     
     I_c = read_content_img(opt.content)
@@ -75,7 +75,7 @@ if __name__ == '__main__':
     m_unnormalize = UnNormalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))
 
     content = m_unnormalize(I_c).clamp(0, 1).cpu().data
-    style = m_unnormalize(I_s).clamp(0, 1).cpu().data
+    # style = m_unnormalize(I_s).clamp(0, 1).cpu().data
     transfer = m_unnormalize(I_cs).clamp(0, 1).cpu().data
     
     transfer = adjust_contrast(transfer,1.5)

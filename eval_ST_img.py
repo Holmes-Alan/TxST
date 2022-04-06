@@ -52,7 +52,7 @@ def custom_text(text):
 
 if __name__ == '__main__':
     m_model = StyleTransfer.load_from_checkpoint(
-        "models/wikiart_subset.ckpt").cuda()
+        "models/wikiart_subset.ckpt", strict=False).cuda()
 
     cont_imgs = glob.glob(os.path.join(opt.content, "*.*"))
     style_imgs = glob.glob(os.path.join(opt.style, "*.*"))
