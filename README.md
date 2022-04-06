@@ -94,6 +94,7 @@ $ python eval_ST_img.py
 ```
 
 the results are saved at "output" folder, like
+
 ![sample result](./figure/14_stylized_20200428220829.png)
 ## Artist Style Transfer using Texts
 
@@ -106,7 +107,9 @@ $ python demo_edit_art_style.py --content %path-to-your-content-image% --style %
 python demo_edit_art_style.py --content data/content/14.jpg --style vangogh
 ```
 the results are saved at "output" folder, like:
+
 ![sample result](./figure/14_vangogh.png)
+
 ## Texture Style Transfer using Texts
 
 run
@@ -118,6 +121,7 @@ $ python demo_edit_texture_style.py --content %path-to-your-content-image% --sty
 python demo_edit_texture_style.py --content data/content/14.jpg --style grid
 ```
 the results are saved at "output" folder, like:
+
 ![sample result](./figure/14_grid.png)
 # Visualization
 
