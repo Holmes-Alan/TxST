@@ -13,7 +13,6 @@ import torch.nn.functional as Func
 
 Exp_name = "VGG_Pretrain"
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "1,0"
 seed_everything(123)
 
 
