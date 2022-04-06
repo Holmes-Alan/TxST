@@ -8,16 +8,16 @@ This repo only provides simple testing codes and pretrained models.
 Please check our [paper](https://arxiv.org/pdf/2202.13562.pdf)
 
 # Dependencies
-    Python > 3.0
-    OpenCV library
-    Pytorch >= 1.8
-    NVIDIA GPU + CUDA >=11.0
+    Python 3.8 (> 3.0)
+    Pytorch 1.8.2 (>= 1.8)
+    NVIDIA GPU + CUDA 10.2 (or >=11.0)
     
 # Usage
 ## First, install additional dependencies by running
 ```sh
 $ pip install -r requirements.txt
 ```
+
 ## Second, install [CLIP](https://github.com/openai/CLIP)
 ```sh
 $ pip install git+https://github.com/openai/CLIP.git
