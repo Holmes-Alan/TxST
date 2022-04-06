@@ -31,7 +31,7 @@ $ miniconda3/envs/conda_env_name(#your conda-env name#)/lib/python(#your version
 # an example path
 /home/liwen/miniconda3/envs/txst/lib/python3.8/site-packages/clip
 ```
-then replace it with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
+then replace the "model.py" with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
 
 like:
 ```text
