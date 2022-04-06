@@ -27,8 +27,21 @@ $ pip install git+https://github.com/openai/CLIP.git
 find the "model.py" at the prebuilt CLIP lib path, if you are using Conda, you can find it at 
 ```sh
 $ miniconda3/envs/conda_env_name(#your conda-env name#)/lib/python(#your version#)/site-packages/clip
+
+# an example path
+/home/liwen/miniconda3/envs/txst/lib/python3.8/site-packages/clip
 ```
 then replace it with the new [file](https://drive.google.com/file/d/1h-Wh6tUGf9OTrGkJSAyvZRymTfQXc--O/view?usp=sharing)
+
+like:
+```text
+.../clip
+├── bpe_simple_vocab_16e6.txt.gz
+├── clip.py
+├── __init__.py
+├── model.py (replace it !!)
+└── simple_tokenizer.py
+```
 
 # Testing
 ## 1. download the pretrianed model from [here](https://drive.google.com/file/d/1lQm5MGpPV1154MbtvGQDZlCMx2D8beHr/view?usp=sharing)
