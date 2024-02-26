@@ -1,7 +1,9 @@
 # TxST (Arbitrary text driven artistic style transfer)
 
 [![Open TxST in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1RO_gZBqSHoNWt-lo8oaw5NBI2E3dXASi?usp=sharing)<br>
+
 If the above does not work, try the following one.
+
 [![Open TxST in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/12qK4Tu50DnwfrXA1h4cdUt7LWtpBatwN?usp=sharing)<br>
 
 
